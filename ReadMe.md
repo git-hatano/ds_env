@@ -46,3 +46,26 @@ docker restart <CONTAINER ID>
 ```
 localhost:8888
 ```
+
+
+# git (最低限のコマンド)
+リモートリポジトリの追加
+```
+git remote add origin https://github.com/git-hatano/ds_env.git
+```
+編集したファイルをコミット対象に変更する（staging add） 
+```
+git add .
+```
+コミット対象になったか確認
+```
+git status
+```
+stageにあるファイルを全てcommit
+```
+git commit -m "this is first commit"
+```
+masterブランチにpush
+```
+git push origin master
+```
