@@ -48,7 +48,7 @@ localhost:8888
 ```
 
 
-# git (最低限のコマンド)
+## git command
 リモートリポジトリの追加
 ```
 git remote add origin https://github.com/git-hatano/ds_env.git
