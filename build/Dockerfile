@@ -11,6 +11,9 @@ RUN wget https://repo.continuum.io/archive/Anaconda3-2019.10-Linux-x86_64.sh && 
 ENV PATH /opt/anaconda3/bin:$PATH
 
 RUN pip install --upgrade pip
+RUN conda remove jupyter
+# RUN conda install -c conda-forge jupyterlab=3
+RUN conda install xeus-python jupyterlab=3 -c conda-forge
 WORKDIR /
 CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--LabApp.token=''"]
 
